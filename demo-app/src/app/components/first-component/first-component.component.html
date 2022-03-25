@@ -1,0 +1,15 @@
+ <!-- <input type="text" [(ngModel)] = "username" />
+ <button (click)="go()">Submit</button> -->
+ 
+
+<form [formGroup]="studentForm" (ngSubmit)="onSubmit()"> 
+  <label>Name: </label>
+  <input [ngClass]="studentForm.touched && studentForm.invalid ? 'red' : ''" type="text" formControlName="name" /><br/>
+
+  <label>Email: </label>
+  <input type="email" formControlName="email" [ngClass]="studentForm.controls['email'].dirty && studentForm.controls['email'].invalid ? 'red' : '' "  /><br/>
+
+  <label>Password: </label>
+  <input type="password" formControlName="password" /><br/>
+  <button type="submit">Submit</button>
+</form>

@@ -1,0 +1,12 @@
+ body{
+    color: rgb(8, 8, 8);
+    background-color: rgb(137, 180, 180);
+} 
+.text-color{
+    border: 1px solid;
+    width: 100px;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 30px;
+    border-radius:100%;
+}

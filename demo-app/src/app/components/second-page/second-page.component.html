@@ -1,0 +1,16 @@
+<div *ngIf="isAdd">
+    <h2 [ngClass]="val == 10 ? 'special' : val ==11 ? 'special1' : val ==12? 'special2' :''">Change color Acording To Cundition :- {{ val }}</h2>
+    <button *ngIf="val > 99" (click)="increaseCount()">Click me </button>
+    <button *ngIf="val > 200" (click)="increaseCount()">Clicked</button>
+
+    <div *ngFor="let value of arr; let i=index"> {{i}} {{value.id}} {{value.name}}</div>
+
+    <button routerLink="/first-page">click</button>
+    <a class="button" routerLink="/first-page" routerLinkActive="activebutton">Crisis Center</a>
+</div>
+
+<div *ngIf="!isAdd">
+    <h1>edit data form</h1>
+</div>
+
+
